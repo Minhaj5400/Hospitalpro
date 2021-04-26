@@ -1,0 +1,612 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	
+}
+.Information {
+    background: #1FA2FF;
+    padding: 20px 20px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.Email {
+    width: 250px;
+    float: left;
+}
+
+i.fas.fa-envelope {
+    color: white;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.Email a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.Time {
+    width: 891px;
+    float: left;
+}
+
+i.far.fa-clock {
+    color: white;
+    font-size: 18px;
+    margin-right: 11px;
+}
+
+.Time a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.SocialIcons {
+    width: 150px;
+    float: left;
+}
+
+.SocialIcons a {
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    color: white;
+    border: 1px solid white;
+    display: grid;
+    margin-right: 8px;
+    place-items: center;
+    float: left;
+    border-radius: 100%;
+    transition: 0.5s ease;
+}
+
+.SocialIcons a:hover {
+    background: white;
+    color: black;
+}
+
+.Email a:hover {
+    color: black;
+}
+
+.Time a:hover {
+    color: black;
+}
+.Logo {
+    width: 75px;
+    float: left;
+    font-size: 45px;
+    text-align: center;
+    color: #1FA2FF;
+}
+
+.Name {
+    width: 170px;
+    float: left;
+    padding: 10px 0px;
+    border: none;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background: #1FA2FF;
+    color: white;
+    margin-top: 10px;
+	margin-right:20px;
+}
+}
+.Navbar {
+    background: transparent;
+    position: relative;
+}
+
+ul#List-of-link {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background: #1FA;
+}
+
+ul#List-of-link li {
+    float: left;
+}
+
+ul#List-of-link li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    width: 105px;
+    transition: all .5s ease;
+}
+
+a.active {
+    background: red;
+    border-radius: 3px;
+}
+ul#List-of-link li a:hover{
+	background:red;
+}
+.searchIcon {
+    position: absolute;
+    right: 55px;
+    top: 90px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.slider {
+    background: url(slidebg.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	margin-bottom:40px;
+}
+
+.logoandnavbar {
+    width: 100%;
+    margin-bottom: 1px;
+}
+.sliderdesc {
+    width: 280px;
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    background: #1FA2FF;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.sliderdesc h1 {
+    color: white;
+}
+.sliderbtn {
+    position: absolute;
+    top: 310px;
+    left: 120px;
+    width: 100px;
+}
+
+button {
+    padding: 9px;
+    text-align: center;
+    border: none;
+    background: #1FA2FF;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+	opacity:.4;
+    transition: .3s ease;
+}
+
+button:hover {
+    opacity:1;
+    cursor:pointer;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.divWrapper {
+    overflow: hidden;
+}
+
+.MeetDoctors {
+    width: 350px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+	position:relative;
+}
+.MeetDoctors::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 75%;
+    left: 41%;
+    margin-left: -5px;
+    margin-top: 15px;
+    border-width: 20px;
+    margin-bottom: 15px;
+    border-style: solid;
+    border-color: #1FA2FF transparent transparent transparent;
+ }
+	.Docimages {
+    width: 376px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 9px 14px 0px rgb(0 0 0 / 20%);
+    border: 1px solid #ece8e8;
+    margin-right: 20px;
+	margin-top:10px;
+	transition:.3s ease;
+}
+.Docimages:hover img {
+    transform: scale(1.5);
+	cursor:pointer;
+}
+.Docimages:hover h2{
+	visibility:visible;
+}
+.Docimages:hover p{
+	visibility:visible;
+	
+}
+div#Zoomin {
+    transform: scale(1);
+}
+
+figure {
+    overflow: hidden;
+  
+}
+
+.Docimages img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+	transition: .3s ease;
+}
+
+
+.Docimages h2 {
+    color: #1FA2FF;
+    margin: 15px 0px;
+	visibility:hidden;
+	transition:.3s ease;
+    }
+
+.Docimages p {
+    color: #1FA2FF;
+    font-size: 20px;
+	visibility:hidden;
+	transition:.3s ease;
+}
+
+.Docimages:last-child {
+    margin-right: 0px;
+}
+.momsandbabys {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 250px;
+    margin: 0px auto;
+}
+
+h1 {}
+
+.momsandbabys h1 {
+    color: #1FA2FF;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.momsandbabys h1::after {
+	content: "";
+	width: 101px;
+	height: 7px;
+	display: inline-block;
+	background: #1FA2FF;
+	margin-bottom: 20px;
+	}
+	.Momsandnewborn{
+		width: 376px;
+		height:auto;
+		float:left;
+		margin-right:20px;
+	}
+	.Momsandnewborn:last-child{
+		margin-right:0px;
+	}
+
+
+.styled img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    transform: scale(1);
+    transition: .3s ease;
+}
+.styled:hover img {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.sectionbtn {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#secbtn {
+    width: 245px;
+    font-size: 30px;
+    padding: 10px;
+    background: #1FA2FF;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    opacity: unset;
+	transition:.3s ease;
+}
+
+#secbtn:hover {
+    background: red;
+}
+.helpsection {background: #fbf9f9;}
+
+.Helpsec {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.Helpsec h2 {
+    font-size: 40px;
+    color: #1FA2FF;
+    margin-bottom: 1px;
+}
+
+.Helpsec h2::after {
+	content: "";
+	width: 101px;
+	height: 7px;
+	background: #1FA2FF;
+	display: inline-block;
+	margin-bottom: 10px;
+	}
+	.Helpimg {
+    display: inline-block;
+    float: left;
+    width: 376px;
+    margin-right: 20px;
+}
+
+.Helpimg img {
+    width: 100%;
+    height: 389px;
+    object-fit: cover;
+}
+.Helpimg:last-child {
+    margin-right: 0px;
+}
+.joinbtn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button#joinwithusbtn {
+    width: 200px;
+    font-size: 30px;
+    opacity: unset;
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+button#joinwithusbtn:hover {
+    background: #1FA2FF;
+}
+.Teamdesc {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.Teamdesc h2 {
+    font-size: 40px;
+    color: #1FA2FF;
+    margin-bottom: -6px;
+}
+
+.Teamdesc h2::after {
+	content: "";
+	width: 101px;
+	height: 7px;
+	background: #1FA2FF;
+	display: inline-block;
+	margin-bottom: 15px;
+	}
+
+.Teamimg {
+    width: 575px;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    cursor:pointer;
+}
+
+.Teamimg img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.Teamimg:last-child {
+    margin-right: 0px;
+}
+.seebtn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button#seemorebtn {
+    width: 180px;
+    font-size: 25px;
+    opacity: unset;
+	transition:.3s ease;
+}
+button#seemorebtn:hover{
+	background:red;
+
+}
+span.right-icon {
+    font-size: 17px;
+    margin-left: 18px;
+    color: white;
+}
+.ICUdesc {
+    text-align: center;
+    width: 146px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+
+.ICUdesc h2 {
+    font-size: 40px;
+    color: #1FA2FF;
+}
+
+span.after::after {content: "";width: 15px;height: 4px;display: inline-block;background: #1FA2FF;margin-left: 6px;vertical-align: middle;}
+
+.ICUdesc h2::after {content: "";width: 84px;height: 7px;background: red;display: inline-block;margin-bottom: 15px;}
+
+.ICUimg {
+    width: 575px;
+    float: left;
+    display: inline-block;
+    margin-right: 20px;
+    border-bottom: 3px solid #1FA2FF;
+}
+
+.ICUimg:last-child {
+    margin-right: 0px;
+}
+
+.ICUimg img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+	cursor:pointer;
+}
+
+.divICUbtn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.divICUbtn {}
+
+button#icubtn {
+    font-size: 30px;
+    width: 200px;
+    opacity: unset;
+    background: red;
+    transition: .3s ease;
+}
+
+button#icubtn:hover {
+    background: #1FA2FF;
+}
+.Timedesc {
+    width: 300px;
+    margin-bottom: 30px;
+    margin: 0px auto;
+}
+
+.Timedesc h2 {
+    font-size: 40px;
+    color: #1FA2FF;
+    margin-bottom: 30px;
+}
+
+.Timedesc h2::after {
+    content: "";
+    width: 140px;
+    height: 7px;
+    display: inline-block;
+    background: #1FA2FF;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    }
+
+.Timeimages {
+    width: 575px;
+    float: left;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.Timeimages:last-child {
+    margin-right: 0px;
+}
+
+.Timeimages img {
+	width: 100%;
+	height: 330px;
+	object-fit: cover;
+	cursor: pointer;
+	}
+.footer {
+    width: 100%;
+    background: #1FA2FF;
+    border-top: 4px solid red;
+    height: auto;
+}
+
+.footerdesc {
+    width: 400px;
+}
+
+.footerdesc h2 {
+    font-size: 40px;
+    margin: 40px;
+    color: white;
+    border-bottom: 4px solid white;
+}
+
+.ftricons {
+    width: 300px;
+    margin: 40px;
+    overflow: hidden;
+}
+
+.ftricons a {
+    text-decoration: none;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    border: 2px solid white;
+    place-items: center;
+    color: white;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    transition: .3s ease;
+}
+
+.ftricons a:hover {
+    background: white;
+    color: black;
+}
+.copyright {
+    text-align: center;
+    padding: 15px;
+}
+
+.copyright p {
+    font-size: 25px;
+    color: white;
+}
